@@ -1,0 +1,37 @@
+package com.test.dynamicprograming;
+
+public class CuttingRodProblem {
+
+	public static void main(String[] args) {
+		int lenghtOfRod = 5;
+		int[] prices = { 2, 5, 7, 8 };
+		calculateMaxProfit(lenghtOfRod, prices);
+	}
+
+	private static void calculateMaxProfit(int lenghtOfRod, int[] prices) {
+		int[][] dpTable = new int[prices.length + 1][lenghtOfRod + 1];
+
+		for (int i = 1; i <= prices.length; i++) {
+			for (int j = 1; j <= lenghtOfRod; j++) {
+				if (i <= j) {
+					dpTable[i][j] = Math.max(dpTable[i - 1][j], prices[i - 1] + dpTable[i][j - i]);
+				} else {
+					dpTable[i][j] = dpTable[i - 1][j];
+				}
+			}
+		}
+		showResult(dpTable, prices, lenghtOfRod);
+	}
+
+	private static void showResult(int[][] dpTable, int[] prices, int lenghtOfRod) {
+		System.out.println("Optimal profit: $" + dpTable[prices.length - 1][lenghtOfRod]);
+		for (int n = prices.length - 1, w = lenghtOfRod; n > 0;) {
+			if (dpTable[n][w] != 0 && dpTable[n][w] != dpTable[n - 1][w]) {
+				System.out.println("We make cut: " + n + "m");
+				w = w - n;
+			} else {
+				n--;
+			}
+		}
+	}
+}
