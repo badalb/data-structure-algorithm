@@ -3,7 +3,7 @@ package com.test.graph.path;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class WrottenOrange {
+public class RottenOrange {
 
 	public static class AxisInfo {
 		private int x;
