@@ -28,7 +28,7 @@ public class BinaryHeap {
 	}
 
 	public int getParent(int index) {
-		if (index < 0 || index >= count) {
+		if (index < 0 || index >= MAX_SIZE) {
 			return -1;
 		}
 		int parentIndex = (index - 1) / 2;
@@ -102,7 +102,7 @@ public class BinaryHeap {
 		return heap[0];
 	}
 
-	private void printHeap() {
+	public void printHeap() {
 		for (int data : heap) {
 			System.out.println(data);
 		}
