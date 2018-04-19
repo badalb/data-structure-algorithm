@@ -15,8 +15,9 @@ public class LongestConsecutiveSubsequence {
 				while (S.contains(j)) {
 					j++;
 				}
-				if (ans < j - arr[i])
+				if (ans < j - arr[i]) {
 					ans = j - arr[i];
+				}
 			}
 		}
 		return ans;
