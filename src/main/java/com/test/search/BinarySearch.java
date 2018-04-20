@@ -19,7 +19,6 @@ public class BinarySearch {
 		} else if (arr[mid] < key) {
 			return binarySearch(arr, key, mid + 1, high);
 		}
-
 		return -1;
 	}
 
