@@ -22,7 +22,7 @@ public class MazeProblem {
 
 	private boolean traverse(int i, int j) {
 
-		if (isFinish(i, j)) {
+		if (isValid(i, j) && isFinish(i, j)) {
 			return true;
 		}
 		if (isValid(i, j)) {
@@ -75,10 +75,17 @@ public class MazeProblem {
 	}
 
 	public static void main(String[] args) {
+		
+		int mazeTable[][] = { 
+				{ 1, 1, 1 }, 
+				{ 1, 0, 1 }, 
+				{ 0, 0, 0 } 
+			};
 
-		int mazeTable[][] = { { 1, 1, 1, 1, 1 }, { 1, 0, 0, 1, 0 }, { 0, 0, 0, 1, 0 }, { 1, 1, 1, 1, 1 },
-				{ 1, 1, 1, 0, 1 } };
-		MazeProblem maze = new MazeProblem(5, mazeTable);
+
+//		int mazeTable[][] = { { 1, 1, 1, 1, 1 }, { 1, 0, 0, 1, 0 }, { 0, 0, 0, 1, 0 }, { 1, 1, 1, 1, 1 },
+//				{ 1, 1, 1, 0, 1 } };
+		MazeProblem maze = new MazeProblem(3, mazeTable);
 		maze.solveMaze();
 	}
 
