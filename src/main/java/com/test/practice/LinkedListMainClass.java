@@ -2,10 +2,10 @@ package com.test.practice;
 
 import com.test.linkedlist.Node;;
 
-public class MainClass {
+public class LinkedListMainClass {
 
 	public static void main(String[] args) {
-		LinkList linkedList = new LinkList();
+		LinkedList linkedList = new LinkedList();
 		linkedList.insertEnd(new Node(null, 5));
 		linkedList.insertEnd(new Node(null, 7));
 		linkedList.insertEnd(new Node(null, 9));

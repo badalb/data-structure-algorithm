@@ -2,15 +2,15 @@ package com.test.practice;
 
 import com.test.linkedlist.Node;
 
-public class LinkList {
+public class LinkedList {
 
 	private Node head;
 
-	public LinkList(Node node) {
+	public LinkedList(Node node) {
 		this.head = node;
 	}
 
-	public LinkList() {
+	public LinkedList() {
 	}
 
 	public Node getHead() {
