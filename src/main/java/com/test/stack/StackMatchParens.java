@@ -1,11 +1,9 @@
-package com.rt.stackqueue;
+package com.test.stack;
 
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
-
-import com.test.stack.Stack;
 
 public class StackMatchParens {
 
