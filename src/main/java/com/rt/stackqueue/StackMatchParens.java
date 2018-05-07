@@ -1,13 +1,12 @@
-package com.test.stack;
+package com.rt.stackqueue;
 
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-/**
- * Created by jananiravi on 11/25/15.
- */
+import com.test.stack.Stack;
+
 public class StackMatchParens {
 
 	private static final Map<Character, Character> matchingParenMap = new HashMap<>();
@@ -36,7 +35,6 @@ public class StackMatchParens {
 			Stack<Character> parenStack = new Stack<>();
 			for (int i = 0; i < input.length(); i++) {
 				char ch = input.charAt(i);
-				// Add to the stack for an opening paren.
 				if (openingParenSet.contains(ch)) {
 					parenStack.push(ch);
 				}

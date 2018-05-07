@@ -1,4 +1,4 @@
-package com.test.stack;
+package com.rt.stackqueue;
 
 public class LargestAreaHistogram {
 
