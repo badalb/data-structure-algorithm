@@ -1,4 +1,4 @@
-package com.test.stringalgo;
+package com.rt.string.algo;
 
 public class KMPAlgorithm {
 
