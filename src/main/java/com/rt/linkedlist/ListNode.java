@@ -3,12 +3,16 @@ package com.rt.linkedlist;
 public class ListNode {
 
 	private int data;
-	
+
 	private ListNode next;
 
 	public ListNode(int data) {
 		super();
 		this.data = data;
+	}
+
+	public ListNode() {
+
 	}
 
 	public int getData() {
