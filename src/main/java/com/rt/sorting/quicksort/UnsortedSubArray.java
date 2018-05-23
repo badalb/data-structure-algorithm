@@ -1,4 +1,4 @@
-package com.rt.sorting;
+package com.rt.sorting.quicksort;
 
 /**
  * Given an unsorted array of size n, find minimum length subarray, sorting

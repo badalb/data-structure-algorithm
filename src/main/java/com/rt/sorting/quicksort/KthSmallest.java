@@ -1,4 +1,4 @@
-package com.rt.sorting;
+package com.rt.sorting.quicksort;
 
 public class KthSmallest {
 
