@@ -1,6 +1,6 @@
 package com.rt.sorting.bsisertion;
 
-public class BubleSort {
+public class BubleSortRecursion {
 
 	public static void main(String[] args) {
 		int[] a = { 3, 6, 1, 4, 10, 9, 5 };
@@ -11,18 +11,18 @@ public class BubleSort {
 	}
 
 	private static void bubbleSort(int[] a, int n) {
+
+		if (n <= 1) {
+			return;
+		}
+
 		for (int i = 0; i < n - 1; i++) {
-			for (int j = 0; j < n - i - 1; j++) {
-				if (a[j] > a[j + 1]) {
-					swap(a, j, j + 1);
-				}
+			if (a[i] > a[i + 1]) {
+				int temp = a[i];
+				a[i] = a[i + 1];
+				a[i + 1] = temp;
 			}
 		}
-	}
-
-	private static void swap(int[] a, int i, int j) {
-		int temp = a[i];
-		a[i] = a[j];
-		a[j] = temp;
+		bubbleSort(a, n - 1);
 	}
 }
