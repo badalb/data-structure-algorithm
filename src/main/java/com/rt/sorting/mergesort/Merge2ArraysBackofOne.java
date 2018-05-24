@@ -1,4 +1,4 @@
-package com.test.sort;
+package com.rt.sorting.mergesort;
 
 public class Merge2ArraysBackofOne {
 
