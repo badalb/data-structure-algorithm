@@ -1,6 +1,6 @@
 package com.test.practice;
 
-import com.test.linkedlist.Node;;
+import com.rt.linkedlist.Node;;
 
 public class LinkedListMainClass {
 

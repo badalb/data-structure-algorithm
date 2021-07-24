@@ -1,4 +1,4 @@
-package com.test.linkedlist;
+package com.rt.linkedlist;
 
 public class MainClass {
 
