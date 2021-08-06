@@ -9,7 +9,9 @@ public class SubarrayZeroSum {
 		int sum = 0;
 		for (int i = 0; i < arr.length; i++) {
 			sum = sum + arr[i];
-			if (subArraySum.contains(sum)) {
+			System.out.println(sum);
+			// A subarray sum exists. if we discard that 
+			if (arr[i] == 0 || sum == 0 || subArraySum.contains(sum)) {
 				return true;
 			} else {
 				subArraySum.add(sum);

@@ -39,7 +39,7 @@ public class LowestCommonAncestor {
 		three.setLeftChild(six);
 		three.setRightChild(seven);
 
-		Node<Integer> lca = findLCA(one, 4, 6);
+		Node<Integer> lca = findLCA(one, 2, 4);
 		System.out.println(" Lowest Common Ancester:" + lca.getData());
 
 		Node<Integer> lca1 = findLCA(one, 1, 6);

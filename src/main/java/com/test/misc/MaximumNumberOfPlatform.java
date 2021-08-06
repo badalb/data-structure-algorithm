@@ -1,4 +1,4 @@
-package com.test.sort;
+package com.test.misc;
 
 import java.util.ArrayList;
 import java.util.Arrays;
