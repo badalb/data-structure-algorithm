@@ -7,6 +7,7 @@ public class ChainingHashTable {
 	private int MAX_SIZE;
 	private LinkedList<Entry>[] hash;
 
+	@SuppressWarnings("unchecked")
 	public ChainingHashTable(int size) {
 		this.MAX_SIZE = size;
 		hash = new LinkedList[MAX_SIZE];
