@@ -1,4 +1,4 @@
-package com.rt.search;
+package com.prep.search;
 
 public class CountOccurance {
 
