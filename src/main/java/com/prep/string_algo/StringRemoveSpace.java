@@ -1,4 +1,4 @@
-package com.rt.misc;
+package com.prep.string_algo;
 
 public class StringRemoveSpace {
 

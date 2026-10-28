@@ -1,4 +1,4 @@
-package com.rt.string.algo;
+package com.prep.string_algo;
 
 public class LongestPrefixSuffix {
 
